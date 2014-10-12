@@ -27,7 +27,11 @@ app.post('/', function(req, res) {
     subject: 'Your NobuDOC!',
     text: message
   }, function(err, json) {
-    if (err) { return console.error(err); }
+    if (err) {
+	res.status(500).end();
+	return console.error(err);
+	}
     console.log(json);
+    res.end();
   });
 });
