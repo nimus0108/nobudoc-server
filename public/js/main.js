@@ -1,6 +1,7 @@
+var essay;
 $(document).ready(function(){
     $("#submitbutton").click(function(){
-        var essay= $("#textinput").val();
+        essay= $("#textinput").val();
         console.log(essay);
         
             $("#lengthen").click(function(){
@@ -759,4 +760,19 @@ function diff( o, n ) {
   }
   
   return { o: o, n: n };
+}
+
+function submitData() {
+  $.ajax({
+      type: "POST",
+      url: "/",
+      data: {
+        email: $("#emailinput").val(),
+        message: essay
+      },
+      success: function() {
+        alert('Email sent!');
+      },
+      dataType: 'text'
+  });
 }
