@@ -772,6 +772,7 @@ function submitData() {
       },
       success: function() {
         alert('Email sent!');
+	$("#emailinput").val('');
       },
       dataType: 'text'
   });
