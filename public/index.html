@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+   
+    <link href = "css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href = "css/main.css" rel="stylesheet" type = "text/css" />
+     <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/transition.js"></script>
+    <!--<script src="js/textfilemanager.js"></script>-->
+    <title>Home - NobuDOCS</title> 
+    
+</head>
+<body>
+    
+ <div class="top-menu-bar">
+        
+        <ul class="nav nav-pills navbar-static-top" role="navigation">
+         <img src="css/img/NoBuLogo5.jpg" style="width:60px;height:60px;float:left;margin-left:5px;margin-right:5px;">   
+          <li class="active"><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+    
+<div class="page-header">
+    <div class="page-content">
+        <h1>NobuDOCS.</h1>
+            <p>Don't have enough words for your essay? Want to get rid of uninportant words? For you, NobuDOCS is here.</p>
+        <center><a href="#first"><button type="button" class="btn btn-default">Nobu Now</button></a></center>
+    </div>
+</div>
+        
+<div class="jumbotron" id="drop_zone">
+    <div class="firstchoice" id="first">
+        <center><table class="table table-bordered">
+                <form class="form">
+                    <p>Paste your writing here:</p> 
+                    <textarea id="textinput" rows="10px" cols="60px"></textarea>
+                    <div align="right"><td class="submitbutton" id="submitbutton"><button id="longer" type="button" class="btn btn-default">Submit</button></td></div>
+                <!--<output id="list"></output>
+                <p>Up1oad a .txt essay from your computer:</p>
+                <input type="file" id="files" name="files[]" />
+                -->
+                </form>
+            </table></center>
+    </div>
+            
+    <div class="secondchoice" id="second">
+        <center><table class="tableshortlong, table">
+            <p>Choose to shorten or lengthen:</p>
+                <td class="long"><button id="lengthen" type="button" class="btn btn-default">Lengthen</button></td>
+                <td class="short"><button id = "shorter" type="button" class="btn btn-default">Shorten</button></td>
+            </table></center>
+    </div>
+            
+    <div class="thirdchoice" id="third">
+        <p id="output"></p>
+    </div>
+
+</div> 
+
+    <div style="min-height:25px;background-color:white;" class="page-header">
+    <center><p style="color:#C5C1C7;">
+        Created by THE WINGERS - 2014 
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   
+        <a style="color:#C5C1C7;text-decoration:none;" href="http://www.hackru.org" target="_Blank">HackRU</a>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  
+        <a style="color:#C5C1C7;text-decoration:none;" href="about.html">About this Site</a>
+        </p></center>
+    </div>
+</body>
+</html>

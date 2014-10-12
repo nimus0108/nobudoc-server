@@ -1,0 +1,18 @@
+body {
+    background-color: #9b59b6;
+}
+h1 h3 {
+    color: #000000;
+    text-align: center;
+}
+a:link a:visited a:hover{
+    text-decoration: none !important;
+    color: #000000;
+    pointer-events: none;
+}
+
+p {
+    font-size: 20px;
+    text-align: center;
+    
+}
